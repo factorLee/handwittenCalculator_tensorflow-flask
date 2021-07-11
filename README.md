@@ -4,6 +4,6 @@
 ## 계산기능 결과화면
 ![calc01](https://user-images.githubusercontent.com/53315807/125205229-32445480-e2bc-11eb-9d3f-9192c6b3f46a.gif)
 
---------------------------
+---
 
 ## 1. Model
