@@ -1,10 +1,81 @@
-.content{
-    color: red;
-    background-color: yellow;
-    
-}
+/* main.css */
 
 body{
-    background: linear-gradient(180deg,#12c2e9, #c471ed, #fcb045 ) fixed;
+    background: linear-gradient(-135deg, #c471ed,#12c2e9, #fcb045 ) fixed;
+    padding-top: 70px; 
+    text-align: center;
+    
 }
 /* Jsine, Atlas */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    padding: 35px 25px 35px 25px;
+}
+
+.github-btn {
+    padding-right: 100px;
+}
+
+.solve{
+    padding: 5px 20px 5px 20px;
+}
+
+
+.fade-in-text {
+    display: inline-block;
+    padding: 10px;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+  }
+  @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.alert {
+    width:40%;
+    display:inline-block;
+    text-align: center;
+    align-items: center;   
+ }
+

@@ -1,5 +1,9 @@
+##############
+## views.py ## 
+##############
 from flask import render_template, request
 from PIL import Image
+from tensorflow.python.framework.ops import Operation
 from apps import utils
 
 
@@ -17,9 +21,9 @@ def calculation():
         path = "./static/uploads/" + filename
         f.save(path)
         w = getwidth(path)
-        sol = utils.pipeline_model(path, filename, color="bgr")
+        sol, rightSide, leftSide, operator = utils.pipeline_model(path, filename, color="bgr")
 
-        return render_template("calculation.html", fileupload=True, img_name=filename, w=w, sol=sol)
+        return render_template("calculation.html", fileupload=True, img_name=filename, w=w, sol=sol, rightSide=rightSide, leftSide=leftSide, operator=operator)
 
     return render_template("calculation.html", fileupload=False, img_name="")
 

@@ -1,3 +1,6 @@
+##############
+## utils.py ## 
+##############
 import cv2
 import numpy as np
 import imutils
@@ -52,32 +55,50 @@ def pipeline_model(path, filename, color="bgr"):
         # 숫자객체를 detection한 이미지를 result 폴더에 저장
         cv2.imwrite("./static/result/{}".format(filename), img)
 
-
     labels=[ i for i in label_map ]
-    eq=[]
-    pos=[]
+    eq=[] # 계산에 사용되는 숫자와 연산자를 저장하는 리스트
+    pos=[] # 숫자와 연산자 요소들의 총 갯수를 저장하는 리스트
+    # 요소 수집
     for i in ((chars)):
         if len(eq)==0 and i[0][0] in labels[3:]:
             eq.append(i[0][0])
-            print(f"첫번째 loop i : {i[0][0]}, eq = {eq[0]}" )
         elif len(eq)>0 and i[0][0] in labels[4:14]:
-            eq.append(i[0][0])
-            print(f"두번째 loop i : {i[0][0]}, eq = {eq[0]}")
-    
+            eq.append(i[0][0])    
         elif len(eq)>0 and i[0][0] in labels[:4]:
             eq.append(i[0][0])
             pos.append(len(eq))
-            print(f"세번째 loop i : {i[0][0]}, eq = {eq[0]}, pos = {pos}")
         else:
             pass
 
-    for i in pos:
-        if eq[i-1]=='+':
-            sol = int(''.join(eq[:pos[0]-1]))+int(''.join(eq[pos[0]:]))
-        elif eq[i-1]=='%': 
-            sol = int(''.join(eq[:pos[0]-1]))/int(''.join(eq[pos[0]:]))
-        elif eq[i-1]=='*':
-            sol = int(''.join(eq[:pos[0]-1]))*int(''.join(eq[pos[0]:]))
-        else:
-            sol = int(''.join(eq[:pos[0]-1]))-int(''.join(eq[pos[0]:]))
-    return sol
+    # 계산 Loop 및 예외처리
+    try:
+        for i in pos:
+            # if eq
+            if eq[i-1]=='+':
+                rightSide = int(''.join(eq[:pos[0]-1]))
+                leftSide = int(''.join(eq[pos[0]:]))
+                operator = '+'
+                sol = rightSide + leftSide
+            elif eq[i-1]=='%': 
+                rightSide = int(''.join(eq[:pos[0]-1]))
+                leftSide = int(''.join(eq[pos[0]:]))
+                operator = '/'
+                sol = rightSide / leftSide
+            elif eq[i-1]=='*':
+                rightSide = int(''.join(eq[:pos[0]-1]))
+                leftSide = int(''.join(eq[pos[0]:]))
+                operator = '*'
+                sol = rightSide * leftSide
+            else:
+                rightSide = int(''.join(eq[:pos[0]-1]))
+                leftSide = int(''.join(eq[pos[0]:]))                
+                operator = '-'
+                sol = rightSide - leftSide
+
+    except:
+        sol = 'error'    
+        rightSide = 'error' 
+        leftSide = 'error'
+        operator = 'error'
+
+    return sol, rightSide, leftSide, operator

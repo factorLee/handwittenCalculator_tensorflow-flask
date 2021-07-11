@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 
 {% block bodyblock %}
-        <div class="container">
-            <br><br>
-            <h3 class="content"><span style="color:green">시각과정 손글씨 계산기 프로젝트</span>에 오신 것을 환영합니다!</h3>
+        <br>
+        <br>
+        <br>
+        <div class="fade-in-text" style="color: white;">
             <br>
+            <p>간단한 사칙연산(+ - * /)이 가능한 계산기 입니다.</p>
+            <br>
+            <h1 class="content">손글씨 계산기 프로젝트에 오신 것을 환영합니다!</h1>
+            <br>
+            <br>
+            <h4>손글씨로 적힌 사칙연산 계산식 이미지를 올리면 인식해줍니다.</h4>
+            <br>
+            
             <p>
-                손글씨로 적힌 사칙연산 계산식 이미지를 올리면 인식해줍니다.
             </p>
             <br>
             <div align="center">
-                <a class="btn btn-outline-primary" href="{{ url_for("calculation") }}">한번 가봅시다!</a>
+                
+                <a class="btn btn-outline-light" href="{{ url_for("calculation") }}">Start!</a>
             </div>
         </div>
 {% endblock %}
