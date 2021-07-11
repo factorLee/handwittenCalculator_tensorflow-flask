@@ -7,3 +7,10 @@
 ---
 
 ## 1. Model
+
+---
+## Reqirements
+- tensorflow==2.5.0
+- opencv-python==4.5.2.54
+- Flask==2.0.1
+- imutils==0.5.4
