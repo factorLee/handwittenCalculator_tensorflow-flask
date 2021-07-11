@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>손글씨 계산기</title>
+
+        <link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navber navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{{ url_for("index") }}">
+                    <img src="{{ url_for("static", filename="image/vangogh.jpg") }}" alt="회사 이미지" width="150" height="30">
+                </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse", data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="{{ url_for("index") }}">Home</a>
+                        <a class="nav-item nav-link" href="{{ url_for("calcapp") }}">Calc</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        {% block bodyblock %}
+        {% endblock %}
+    
+        <footer class="footer">
+            <div class="container">
+                <img src="{{ url_for("static", filename="image/footer.png") }}" alt="footer logo" width="200" height="40">
+                <p align = "center">
+                    <span style="color: white;">
+                        copyrights 이상주
+                    </span>
+                </p>
+            </div>
+        </footer>
+
+        <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+        </style>
+    </body>
+
+</html>
