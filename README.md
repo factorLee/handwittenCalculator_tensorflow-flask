@@ -6,7 +6,7 @@
 
 ## 1. Data
 [Handwritten Math Symbols](https://www.kaggle.com/sagyamthapa/handwritten-math-symbols/code)
-- image shape : (40, 40)
+- image reshape : (40, 40)
 
 ## 2. Model
 ![스크린샷 2021-07-12 오전 3 05 30](https://user-images.githubusercontent.com/53315807/125205602-05913c80-e2be-11eb-86ac-d07f2f5c922d.png)
