@@ -23,7 +23,7 @@
 - optimizer : Adam
 - loss : Categorical Crossentropy
 
-- validation accuracy : ~~0.9365~~ ->
+- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> 
 
 ## 4. Recognition
 - image sample
