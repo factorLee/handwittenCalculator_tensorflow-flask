@@ -13,6 +13,7 @@
 
 
 ## 2. Model
+* layers
 ![스크린샷 2021-07-12 오전 3 05 30](https://user-images.githubusercontent.com/53315807/125205602-05913c80-e2be-11eb-86ac-d07f2f5c922d.png)
 - validation accuracy: 0.9365
 ---
