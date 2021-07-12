@@ -14,7 +14,11 @@
 
 ## 2. Input
 - shape : (40, 40)
-- (image sample)
+- (입력 샘플사진)
+
+![sample input](https://user-images.githubusercontent.com/53315807/125338743-866a3a00-e38b-11eb-886a-421b7bd9216e.png)
+
+
 
 ## 3. Model
 - layers
