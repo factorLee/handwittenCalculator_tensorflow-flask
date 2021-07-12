@@ -1,3 +1,4 @@
+
 # handwittenCalculator_tensorflow-flask
 - 손글씨로 적은 사칙연산 계산식 이미지를 입력해주면 숫자와 연산자를 인식해 계산 결과를 출력해주는 프로그램입니다.
 ---
@@ -17,8 +18,7 @@
 
 ## 3. Model
 - layers
-
-![스크린샷 2021-07-12 오전 3 05 30](https://user-images.githubusercontent.com/53315807/125205602-05913c80-e2be-11eb-86ac-d07f2f5c922d.png)
+![layers](https://user-images.githubusercontent.com/53315807/125338413-1c519500-e38b-11eb-8d33-62d4d0163a92.png)
 
 - optimizer : Adam
 - loss : Categorical Crossentropy
