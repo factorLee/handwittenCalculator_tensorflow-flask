@@ -23,10 +23,11 @@
 - optimizer : Adam
 - loss : Categorical Crossentropy
 
-- validation accuracy : ~~0.9365~~
+- validation accuracy : ~~0.9365~~ ->
 
 ## 4. Recognition
 - image sample
+
 
 ---
 ## Reqirements
@@ -34,3 +35,7 @@
 - opencv-python==4.5.2.54
 - Flask==2.0.1
 - imutils==0.5.4
+
+
+## Reference
+[reference1](https://www.kaggle.com/rohankurdekar/handwritten-basic-math-equation-solver)
