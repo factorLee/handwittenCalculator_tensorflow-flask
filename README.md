@@ -18,12 +18,13 @@
 
 ## 3. Model
 - layers
+
 ![layers](https://user-images.githubusercontent.com/53315807/125338413-1c519500-e38b-11eb-8d33-62d4d0163a92.png)
 
 - optimizer : Adam
 - loss : Categorical Crossentropy
 
-- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> 0.9456
+- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> 0.9531
 
 ## 4. Recognition
 - image sample
