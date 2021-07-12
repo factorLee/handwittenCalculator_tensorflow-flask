@@ -11,11 +11,11 @@
 [Dataset: Handwritten Digits and Operators](https://www.kaggle.com/michelheusser/handwritten-digits-and-operators)
 - %, *, +, -, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, [, ]
 
-## 2. input
+## 2. Input
 - shape : (40, 40)
 - (image sample)
 
-## 2. Model
+## 3. Model
 - layers
 
 ![스크린샷 2021-07-12 오전 3 05 30](https://user-images.githubusercontent.com/53315807/125205602-05913c80-e2be-11eb-86ac-d07f2f5c922d.png)
@@ -23,8 +23,10 @@
 - optimizer : Adam
 - loss : Categorical Crossentropy
 
-- validation accuracy: 0.9365
+- **validation accuracy ~~0.9365~~
 
+## 4. Recognition
+- image sample
 
 ---
 ## Reqirements
