@@ -29,7 +29,7 @@
 - loss : Categorical Crossentropy
 - epoch : 20
 - batch_size : 256
-- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> 0.9531
+- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> 0.9531(개선중)
 
 ## 4. Recognition
 - (ROI 인식 샘플사진)
