@@ -32,7 +32,15 @@
 - validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> 0.9531
 
 ## 4. Recognition
-- image sample
+- (ROI 인식 샘플사진)
+
+![ROI Recognition sample image](https://user-images.githubusercontent.com/53315807/125338855-ad287080-e38b-11eb-8717-11a42669a1d8.png)
+
+## 5. output
+- (output image sample)
+
+
+![output image sample](https://user-images.githubusercontent.com/53315807/125338977-d3e6a700-e38b-11eb-8a72-dc88f51eed6d.png)
 
 
 ---
