@@ -29,7 +29,7 @@
 - loss : Categorical Crossentropy
 - epoch : 20
 - batch_size : 256
-- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> **0.9531**(개선중)
+- validation accuracy : ~~0.8957~~ -> ~~0.9365~~ -> ~~0.9456~~ -> ~~0.9515(목표치)~~ -> ~~0.9531~~ -> **0.9644**
 
 ## 4. Recognition
 - (ROI 인식 샘플사진)
@@ -49,6 +49,11 @@
 - opencv-python==4.5.2.54
 - Flask==2.0.1
 - imutils==0.5.4
+
+## update 
+**(garbage in garbage out)**
+
+- 예측에 좋지 못한 영향을 미치는 Data를 전부 조사하여 제거(예측값 96.44로 상승)
 
 
 ## Reference
