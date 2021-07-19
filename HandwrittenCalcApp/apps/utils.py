@@ -9,10 +9,10 @@ from tensorflow.keras.models import load_model
 from helper_functions import unzip_data
 
 # read & open zipfile
-# unzip_data('/Users/sangjulee1/Desktop/github/handwittenCalculator_tensorflow-flask/HandwrittenCalcApp/model/HandwrittenCalc_acc_0.9531-20210712T175255Z-001.zip')
+# unzip_data('/Users/sangjulee1/Desktop/github/handwittenCalculator_tensorflow-flask/HandwrittenCalcApp/model/HandwrittenCalc_acc_0.9644.H5-20210719T094336Z-001.zip')
 
 # model load
-new_model = load_model('./model/HandwrittenCalc_acc_0.9531')
+new_model = load_model('./model/HandwrittenCalc_acc_0.9644.H5')
 # print("@@@@ 모델이 잘 불러와졌습니다. @@@@", new_model.summary())
 
 # train_set.class_indices
