@@ -23,7 +23,8 @@
 ## 3. Model
 - layers
 
-![layers](https://user-images.githubusercontent.com/53315807/125338413-1c519500-e38b-11eb-8d33-62d4d0163a92.png)
+![layers](https://user-images.githubusercontent.com/53315807/126153438-20eb4636-1d76-4f63-b4a5-14e9d8913eb1.png)
+
 
 - optimizer : Adam
 - loss : Categorical Crossentropy
