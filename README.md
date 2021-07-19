@@ -50,10 +50,10 @@
 - Flask==2.0.1
 - imutils==0.5.4
 
-## update 
+## Update 
 **(garbage in garbage out)**
 
-- 예측에 좋지 못한 영향을 미치는 Data를 전부 조사하여 제거(예측값 96.44로 상승)
+- 예측에 좋지 못한 영향을 미친다고 판단되는 Data를 전부 조사하여 제거(예측값 96.44로 상승)
 
 
 ## Reference
